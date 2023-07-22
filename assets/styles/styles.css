@@ -1,0 +1,38 @@
+/* || GENERAL  */
+
+/* Custom Properties */
+:root {
+  /* Primary Colors */
+  --primary-color-blue: #4f7df3;
+
+  /* Secondary Colors */
+  --secondary-color-pale-blue: #c2d3ff;
+  --secondary-color-light-red: #ff5263;
+
+  /* Neutral Colors */
+  --neutral-color-gray: #969696;
+  --neutral-color-very-dark-blue: #151f29;
+
+  /* Other Colors */
+  --other-color-pure-white: #fff;
+}
+
+/* Body Styles */
+body {
+  display: flex;
+  justify-content: center;
+  background: var(--other-color-pure-white);
+  font: 300 1.25rem "Libre Franklin", sans-serif;
+  padding: 4.5rem 2rem;
+}
+
+/* Styles For Visually Hidden Elements  */
+.visually-hidden:not(:focus, :active) {
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

@@ -15,15 +15,14 @@
 
   /* Other Colors */
   --other-color-pure-white: #fff;
+  --other-color-pure-black: #000;
 }
 
 /* Body Styles */
 body {
-  display: flex;
-  justify-content: center;
   background: var(--other-color-pure-white);
   font: 300 1.25rem "Libre Franklin", sans-serif;
-  padding: 4.5rem 2rem;
+  padding: 5.3rem 0 0;
 }
 
 /* Styles For Visually Hidden Elements  */
@@ -35,4 +34,52 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+/* || PING COMING SOON PAGE (MOBILE) */
+
+/* | HEADER | */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.45rem;
+}
+
+/* Heading (Visually Hidden) */
+header > .heading {
+  font: 700 1.5rem "Libre Franklin", sans-serif;
+  text-align: center;
+}
+
+/* Icon */
+header > .icon {
+  max-width: 3.5rem;
+}
+
+/* | MAIN | */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+main > .heading {
+  color: var(--neutral-color-gray);
+  font: 300 1.39rem "Libre Franklin", sans-serif;
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+main > .heading > span {
+  color: var(--other-color-pure-black);
+  font: 700 1.39rem "Libre Franklin", sans-serif;
+}
+
+/* Email Subscription Note */
+main > .email-subscription-note {
+  font: 300 0.75rem "Libre Franklin", sans-serif;
+  text-align: center;
 }

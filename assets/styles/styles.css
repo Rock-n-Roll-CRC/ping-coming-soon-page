@@ -16,13 +16,16 @@
   /* Other Colors */
   --other-color-pure-white: #fff;
   --other-color-pure-black: #000;
+
+  /* Shadow Colors */
+  --shadow-color-blue: #4f7df385;
 }
 
 /* Body Styles */
 body {
   background: var(--other-color-pure-white);
   font: 300 1.25rem "Libre Franklin", sans-serif;
-  padding: 5.3rem 0 0;
+  padding: 5.3rem 1.75rem 0;
 }
 
 /* Styles For Visually Hidden Elements  */
@@ -47,14 +50,14 @@ header {
   margin-bottom: 2.45rem;
 }
 
-/* Heading (Visually Hidden) */
-header > .heading {
+/* Webpage Heading (Visually Hidden) */
+header > .webpage-heading {
   font: 700 1.5rem "Libre Franklin", sans-serif;
   text-align: center;
 }
 
-/* Icon */
-header > .icon {
+/* Ping Icon */
+header > .ping-icon {
   max-width: 3.5rem;
 }
 
@@ -65,15 +68,15 @@ main {
   align-items: center;
 }
 
-/* Heading */
-main > .heading {
+/* Launch Heading */
+main > .launch-heading {
   color: var(--neutral-color-gray);
   font: 300 1.39rem "Libre Franklin", sans-serif;
   text-align: center;
   margin-bottom: 1.1rem;
 }
 
-main > .heading > span {
+main > .launch-heading > span {
   color: var(--other-color-pure-black);
   font: 700 1.39rem "Libre Franklin", sans-serif;
 }
@@ -82,4 +85,50 @@ main > .heading > span {
 main > .email-subscription-note {
   font: 300 0.75rem "Libre Franklin", sans-serif;
   text-align: center;
+  margin-bottom: 1.95rem;
+}
+
+/* Email Subscription Form */
+main > .email-subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  width: 100%;
+  max-width: 17.6rem;
+  margin-bottom: 4.35rem;
+}
+
+/* Email Subscription Input */
+main > .email-subscription-form > #email-subscription-input {
+  font: 300 0.76rem "Libre Franklin", sans-serif;
+  border-radius: 100px;
+  border: 1px solid var(--secondary-color-pale-blue);
+  padding: 0.72rem 1.95rem;
+}
+
+main > .email-subscription-form > #email-subscription-input::placeholder {
+  color: var(--secondary-color-pale-blue);
+  font: 300 0.76rem "Libre Franklin", sans-serif;
+}
+
+main > .email-subscription-form > #email-subscription-input:focus {
+  outline: 0;
+}
+
+/* Email Subscription Notify Button */
+main > .email-subscription-form > .email-subscription-notify-button {
+  color: var(--other-color-pure-white);
+  background-color: var(--primary-color-blue);
+  font: 600 0.76rem "Libre Franklin", sans-serif;
+  border-radius: 100px;
+  border: 0;
+  padding: 0.77rem 0;
+  box-shadow: 0 5px 15px var(--shadow-color-blue);
+  cursor: pointer;
+}
+
+/* Dashboard Illustration */
+main > .dashboard-illustration {
+  width: 100%;
+  max-width: 19.9rem;
 }

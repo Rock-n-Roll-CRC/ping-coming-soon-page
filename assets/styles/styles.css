@@ -25,7 +25,7 @@
 body {
   background: var(--other-color-pure-white);
   font: 300 1.25rem "Libre Franklin", sans-serif;
-  padding: 5.3rem 1.75rem 0;
+  padding: 5.3rem 1.75rem 1.75rem;
 }
 
 /* Styles For Visually Hidden Elements  */
@@ -57,8 +57,9 @@ header > .webpage-heading {
 }
 
 /* Ping Icon */
-header > .ping-icon {
+header > .ping-logo {
   max-width: 3.5rem;
+  height: 1rem;
 }
 
 /* | MAIN | */
@@ -88,7 +89,7 @@ main > .email-subscription-note {
   margin-bottom: 1.95rem;
 }
 
-/* Email Subscription Form */
+/* | Email Subscription Form | */
 main > .email-subscription-form {
   display: flex;
   flex-direction: column;
@@ -98,11 +99,11 @@ main > .email-subscription-form {
   margin-bottom: 4.35rem;
 }
 
-/* Email Subscription Input */
+/* Input */
 main > .email-subscription-form > #email-subscription-input {
   font: 300 0.76rem "Libre Franklin", sans-serif;
-  border-radius: 100px;
   border: 1px solid var(--secondary-color-pale-blue);
+  border-radius: 100px;
   padding: 0.72rem 1.95rem;
 }
 
@@ -115,13 +116,13 @@ main > .email-subscription-form > #email-subscription-input:focus {
   outline: 0;
 }
 
-/* Email Subscription Notify Button */
-main > .email-subscription-form > .email-subscription-notify-button {
+/* Subscribe Button */
+main > .email-subscription-form > .subscribe-button {
   color: var(--other-color-pure-white);
   background-color: var(--primary-color-blue);
   font: 600 0.76rem "Libre Franklin", sans-serif;
-  border-radius: 100px;
   border: 0;
+  border-radius: 100px;
   padding: 0.77rem 0;
   box-shadow: 0 5px 15px var(--shadow-color-blue);
   cursor: pointer;
@@ -131,4 +132,57 @@ main > .email-subscription-form > .email-subscription-notify-button {
 main > .dashboard-illustration {
   width: 100%;
   max-width: 19.9rem;
+  margin-bottom: 7.6rem;
+}
+
+/* | FOOTER | */
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* | Social Links | */
+footer > .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer > .social-links > .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+  width: 1.8rem;
+  border: 1px solid var(--secondary-color-pale-blue);
+  border-radius: 100px;
+}
+
+/* Facebook Link */
+footer > .social-links > .facebook-link svg {
+  fill: var(--primary-color-blue);
+  height: 0.8rem;
+  width: 0.6rem;
+}
+
+/* Twitter Link */
+footer > .social-links > .twitter-link svg {
+  fill: var(--primary-color-blue);
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+/* Instagram Link */
+footer > .social-links > .instagram-link svg {
+  fill: var(--primary-color-blue);
+  height: 0.85rem;
+  width: 0.85rem;
+}
+
+/* Copyright Disclaimer */
+footer > .copyright-disclaimer {
+  color: var(--neutral-color-gray);
+  font: 300 0.62rem "Libre Franklin", sans-serif;
+  text-align: center;
 }

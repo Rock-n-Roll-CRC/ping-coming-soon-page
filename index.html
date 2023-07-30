@@ -15,7 +15,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="./assets/icons/webpage-icon.png"
     />
 
     <!-- Linking Styles & Scripts -->
@@ -46,8 +46,8 @@
       <!-- Webpage Heading (Visually Hidden) -->
       <h1 class="webpage-heading visually-hidden">Ping Coming Soon Page</h1>
 
-      <!-- Ping Icon -->
-      <img src="./assets/images/logo.svg" alt="PING." class="ping-icon" />
+      <!-- Ping Logo -->
+      <svg class="ping-logo"><use href="./assets/icons/icons.svg#ping" /></svg>
     </header>
 
     <!-- Main -->
@@ -60,7 +60,7 @@
 
       <!-- Email Subscription Form -->
       <form action="#" class="email-subscription-form">
-        <!-- Email Subscription Input -->
+        <!-- Input -->
         <input
           type="email"
           name="email-subscription"
@@ -69,8 +69,8 @@
           aria-label="email address"
         />
 
-        <!-- Email Subscription Notify Button -->
-        <button class="email-subscription-notify-button">Notify Me</button>
+        <!-- Subscribe Button -->
+        <button class="subscribe-button">Notify Me</button>
       </form>
 
       <!-- Dashboard Illustration -->
@@ -80,5 +80,43 @@
         class="dashboard-illustration"
       />
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Social Links -->
+      <div class="social-links">
+        <!-- Facebook Link -->
+        <div class="facebook-link social-link">
+          <a href="#">
+            <svg>
+              <use href="./assets/icons/icons.svg#facebook-f" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Twitter Link -->
+        <div class="twitter-link social-link">
+          <a href="#">
+            <svg>
+              <use href="./assets/icons/icons.svg#twitter" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Instagram Link -->
+        <div class="instagram-link social-link">
+          <a href="#">
+            <svg>
+              <use href="./assets/icons/icons.svg#instagram" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright Disclaimer -->
+      <p class="copyright-disclaimer">
+        &copy; Copyright Ping. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>

@@ -60,17 +60,23 @@
 
       <!-- Email Subscription Form -->
       <form action="#" class="email-subscription-form">
-        <!-- Input -->
-        <input
-          type="email"
-          name="email-subscription"
-          id="email-subscription-input"
-          placeholder="Your email address..."
-          aria-label="email address"
-        />
+        <div>
+          <!-- Input -->
+          <input
+            type="email"
+            name="email-subscription"
+            id="email-subscription-input"
+            placeholder="Your email address..."
+            aria-label="email address"
+            autocomplete="off"
+          />
+
+          <!-- Error Message -->
+          <p class="error-message">Please provide a valid email address</p>
+        </div>
 
         <!-- Subscribe Button -->
-        <button class="subscribe-button">Notify Me</button>
+        <button type="button" class="subscribe-button">Notify Me</button>
       </form>
 
       <!-- Dashboard Illustration -->
@@ -86,31 +92,25 @@
       <!-- Social Links -->
       <div class="social-links">
         <!-- Facebook Link -->
-        <div class="facebook-link social-link">
-          <a href="#">
-            <svg>
-              <use href="./assets/icons/icons.svg#facebook-f" />
-            </svg>
-          </a>
-        </div>
+        <a href="#" class="facebook-link social-link">
+          <svg>
+            <use href="./assets/icons/icons.svg#facebook-f" />
+          </svg>
+        </a>
 
         <!-- Twitter Link -->
-        <div class="twitter-link social-link">
-          <a href="#">
-            <svg>
-              <use href="./assets/icons/icons.svg#twitter" />
-            </svg>
-          </a>
-        </div>
+        <a href="#" class="twitter-link social-link">
+          <svg>
+            <use href="./assets/icons/icons.svg#twitter" />
+          </svg>
+        </a>
 
         <!-- Instagram Link -->
-        <div class="instagram-link social-link">
-          <a href="#">
-            <svg>
-              <use href="./assets/icons/icons.svg#instagram" />
-            </svg>
-          </a>
-        </div>
+        <a href="#" class="instagram-link social-link">
+          <svg>
+            <use href="./assets/icons/icons.svg#instagram" />
+          </svg>
+        </a>
       </div>
 
       <!-- Copyright Disclaimer -->
